@@ -8,5 +8,10 @@
 2. Задачи для практики в своём темпе: [CodeWars](https://www.codewars.com/)
 3. Задачи с проверкой эффективности решения по памяти и времени: [LeetCode](https://leetcode.com/problemset/all/?listId=wpwgkgt&page=1&sorting=W3sic29ydE9yZGVyIjoiQVNDRU5ESU5HIiwib3JkZXJCeSI6IkRJRkZJQ1VMVFkifV0%3D)
 
+#### Загрузка решения
+1. Написать решение и тесты к нему (функции, начинающуюся со слова test)
+2. Запустить pytest
+3. Запушить решение в репозиторий
+
 ### Проекты
 1. Игра ханойские башни
