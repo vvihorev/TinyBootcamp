@@ -9,7 +9,7 @@
 
 > [На дом](https://github.com/vvihorev/TinyBootcamp/blob/main/lessons/1_input_output.md): ввод и вывод данных с помощью функций `print()`, и `input()`.
 
-# 
+# Дальнейший план действий
 
 ## Базовые элементы языка 
 1. Ввод, вывод, переменные.
