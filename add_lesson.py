@@ -15,5 +15,5 @@ new_name = input("Lesson title: ")
 
 with open("lessons/" + new, "w") as new_lesson:
     new_lesson.writelines(
-        [f"# Занятие {new_number}. {new_name}\n", "\n", f"# Источники\n", "1. \n"]
+        [f"# Занятие {new_number}.\n", "## {new_name}\n", "\n", f"## Источники\n", "1. \n"]
     )
