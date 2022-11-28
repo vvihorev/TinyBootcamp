@@ -22,8 +22,10 @@
 
 ## 3. Циклы `for` и `while`
 * Особенности использования и различия циклов
+* Модуль `turtle` и графические примитивы
+* Использование функций
 
-> [На дом](https://github.com/vvihorev/TinyBootcamp/blob/main/practice/2_datatypes_conditions.md): Задачи на использование математических операторов и условий.
+> [На дом](http://cs.mipt.ru/python/lessons/lab2.html#o2-s): Задачи от МФТИ по использованию модуля `turtle`.
 
 
 # Дальнейший план действий
