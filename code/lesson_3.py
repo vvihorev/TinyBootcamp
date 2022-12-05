@@ -48,14 +48,14 @@ def draw_square(side):
         t.forward(side)
         t.left(90)
 
-# for r in range(50, 5, -5):
-    # draw_circle(r)
+for r in range(50, 5, -5):
+    draw_circle(r)
 
-start = 10
-for _ in range(10):
-    t.penup()
-    t.goto(-start, -start)
-    t.pendown()
-    draw_square(start*2)
-    start += 10
-time.sleep(1)
+# start = 10
+# for _ in range(10):
+    # t.penup()
+    # t.goto(-start, -start)
+    # t.pendown()
+    # draw_square(start*2)
+    # start += 10
+# time.sleep(1)
