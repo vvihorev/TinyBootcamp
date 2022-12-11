@@ -51,9 +51,13 @@ def find_max_and_min(a):
     return min_elem, max_elem
 
 
-def two_sum(nums, target):
+def has_two_sum(nums, target):
     # TODO: функция возвращает True если в массиве есть два элемента, дающие в сумме target
+    return has_two_sum
+def has_two_sum(nums, target):
     # TODO: функция возвращает индексы пары элементов
+    return has_two_sum
+def has_two_sum(nums, target):
     # TODO: функция возвращает все возможные пары элементов
     return has_two_sum
 
@@ -69,3 +73,4 @@ def count_letters(seq):
 seq = "Hello, world! How are you all doing today?"
 count = count_letters(seq)
 
+# TODO: добавить код из примеров в текст урока
