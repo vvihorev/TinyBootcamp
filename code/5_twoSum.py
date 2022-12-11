@@ -1,3 +1,6 @@
+import time
+
+
 def two_sum_bool(nums, target):
     for i in range(len(nums)):
         for j in range(len(nums)):
@@ -7,10 +10,13 @@ def two_sum_bool(nums, target):
 
 
 def two_sum(nums, target):
+    residuals = {}
     for i in range(len(nums)):
-        for j in range(len(nums)):
-            if i != j and nums[i] + nums[j] == target:
-                return [i, j]
+        res= target - i
+        if res in residuals:
+            return [residuals[res], i]
+        else:
+            residuals[res] = i
     return []
 
 def two_sum_all_pairs(nums, target):
@@ -38,4 +44,7 @@ def test_two_sum_all_pairs():
     assert two_sum_all_pairs(a, 7) == [[0, 5], [1, 4], [2, 3], [3, 2], [4, 1], [5, 0]]
 
 
-print(two_sum_all_pairs(a, 7))
+for i in range(0, 4):
+    start = time.time()
+    two_sum(a*10**i, 7)
+    print(f"10**{i}:\t{(time.time() - start):.5f}")
