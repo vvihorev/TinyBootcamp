@@ -19,6 +19,7 @@ def two_sum(nums, target):
             residuals[res] = i
     return []
 
+
 def two_sum_all_pairs(nums, target):
     answer = []
     for i in range(len(nums)):

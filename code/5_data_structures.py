@@ -1,43 +1,54 @@
-a = [5, 2, 4, 6, 1, 3, 8, 9, 0, 10]
-
-
 def swap_two(a, b):
-    # TODO: Как поменять местами две переменных?
+    c = a
+    a = b
+    b = c
     return a, b
 
 
-def list_printing(a):
-    # Для каждого индекса i в диапазоне от нуля до длины списка a, напечатать i-тый элемент a
-    for i in range(len(a)):
+a = [5, 2, 4, 6, 1, 3, 8, 9, 0, 10]
+"""
+# Для каждого индекса i в диапазоне от нуля до длины списка a, напечатать i-тый элемент a
+for i in range(len(a)): 
+    print(a[i])
+
+# Для каждого элемента в списке a напечатать элемент
+for elem in a:
+    print(elem)
+
+# Что делает этот цикл?
+for i in range(len(a)):
+    if 3 <= i <= 6:
         print(a[i])
 
-    # Для каждого элемента в списке a напечатать элемент
-    for elem in a:
+# А этот?
+for elem in a:
+    if 3 <= elem <= 6:
         print(elem)
+    else:
+        print()
 
-    # Что делает этот цикл?
-    for i in range(len(a)):
-        if 3 <= i <= 6:
-            print(a[i])
+# Срезы списка
+print(a)
+print(a[-3:])
+# print(a[len(a) - 1:0:-1])
 
-    # А этот?
-    for elem in a:
-        if 3 <= elem <= 6:
-            print(elem)
-
-    # Срезы списка
-    print(a[3:6])
-    print(a[::-1])
-
+"""
 
 def insert_sort(a):
-    for i in range(1, len(a)):
-        print(a)
-        j = i
-        while j > 0 and a[j] < a[j - 1]:
-            a[j], a[j - 1] = a[j - 1], a[j]
-            j -= 1
+    count = 0
+    for j in range(1, len(a)):
+        for i in range(1, len(a)):
+            count += 1
+            if a[i - 1] < a[i]:
+                a[i - 1], a[i] = a[i], a[i - 1]
+    print(count)
+    return a
 
+
+b = insert_sort([10, 9, 8, 7, 6, 5, 4, 3, 2, 1])
+print(b[::-1])
+# print(insert_sort(a))
+"""
 
 def find_max(a):
     return max_elem
@@ -74,3 +85,4 @@ seq = "Hello, world! How are you all doing today?"
 count = count_letters(seq)
 
 # TODO: добавить код из примеров в текст урока
+"""
