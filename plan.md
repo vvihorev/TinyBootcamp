@@ -1,7 +1,7 @@
 # Основы программирования на Python
-1. Грокаем Алгоритмы (далее ГА)
-2. [Problem Solving with Algorithms and Data Structures](http://www.openbookproject.net/books/pythonds/Introduction/ObjectOrientedProgramminginPythonDefiningClasses.html) (далее PSwADS)
-3. Простой Python (далее ПП)
+1. Грокаем Алгоритмы (далее ГА) 5 глав
+2. [Problem Solving with Algorithms and Data Structures](http://www.openbookproject.net/books/pythonds/Introduction/ObjectOrientedProgramminginPythonDefiningClasses.html) (далее PSwADS) 2 главы
+3. Простой Python (далее ПП) 4 главы
 
 ## Функциональное программирование
 |Тема|Источники|Сложность|Время|
