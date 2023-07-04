@@ -33,8 +33,8 @@ a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 def test_two_sum_bool():
-    assert two_sum_bool(a, 15) == True
-    assert two_sum_bool(a, 20) == False
+    assert two_sum_bool(a, 15)
+    assert not two_sum_bool(a, 20)
 
 
 def test_two_sum():

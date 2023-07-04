@@ -9,6 +9,10 @@ def parabola(x):
     return x**2 
 
 
+def polynome(x):
+    return x**3 - 20*x**2 + 40*x - 100
+
+
 def newton_method(func, x, epsilon=0.001):
     step = 0
     while abs(func(x)) > epsilon:
@@ -18,24 +22,22 @@ def newton_method(func, x, epsilon=0.001):
     return x
 
 
-def print_derivative_table():
+def print_derivative_table(func):
     print("x\tsquare\tderivative")
     print("--------------------------")
     for x in range(-10, 11):
-        print(f"{x}\t{parabola(x)}\t{get_derivative(parabola, x)}")
-
-
-def polynome(x):
-    return x**3 - 20*x**2 + 40*x - 100
+        print(f"{x}\t{func(x)}\t{get_derivative(func, x)}")
 
 
 def find_zeroes():
+    func = parabola
     x = [x for x in range(-20, 30)]
-    y = [polynome(x_i) for x_i in x]
+    y = [func(x_i) for x_i in x]
 
     plt.plot(x, y)
     plt.grid()
     plt.show()
 
-    res = newton_method(polynome, -10)
-    print(res, parabola(res))
+    res = newton_method(func, -10)
+
+find_zeroes()
